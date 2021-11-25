@@ -1,0 +1,55 @@
+#### 1
+import turtle
+#anggadk
+#motif batik bunga
+t = turtle.Pen()
+turtle.bgcolor('black')
+t.speed(10000000)
+t.hideturtle()
+colors = ["red","yellow","blue","green"]
+#loop
+for i in range (700):
+    t.pencolor(colors[i%4])
+    t.circle(i)
+    t.left(90)
+#### 2
+import turtle  
+#anggadk
+# corona virus 
+t = turtle.Turtle()  
+s = turtle.Screen()  
+s.bgcolor("black")  
+t.pencolor("green")  
+  
+a = 0  
+b = 0  
+t.speed(0)  
+t.penup()  
+t.goto(0,200)  
+t.pendown()  
+while(True):  
+    t.forward(a)  
+    t.right(b)  
+    a+=3  
+    b+=1  
+    if b == 210:  
+        break  
+    t.hideturtle()  
+  
+turtle.done()  
+
+#### 3
+from turtle import *
+#anggadk
+#spiral
+bgcolor('black')
+speed(11)
+hideturtle()
+for i in range(120):
+    color('red')
+    circle(i)
+    color('yellow')
+    circle(i * 0.8)
+    right(3)
+    forward(3)
+done()
